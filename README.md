@@ -19,5 +19,3 @@ No diretório raiz do projeto:
 ```shell
 node app.js
 ```
-
-A documentação estará disponível [neste link](http://localhost:5000/openapi/swagger).
