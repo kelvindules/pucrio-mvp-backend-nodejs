@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro de Produtos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>Cadastro de Produtos</h1>
+        <form id="formAddProduct">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Nome do produto">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Preço</label>
+                <input type="number" class="form-control" id="price" placeholder="Preço do produto">
+            </div>
+            <div class="mb-3">
+                <label for="count" class="form-label">Quantidade</label>
+                <input type="number" class="form-control" id="count" placeholder="Quantidade do produto">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnAddProduct">Adicionar Produto</button>
+            <button type="button" class="btn btn-secondary" id="btnClearForm">Limpar</button>
+            <div id="errorMessage" class="text-danger"></div>
+        </form>
+        
+        <hr class="hr">
+
+        <div class="mb-3">
+            <label for="searchInput" class="form-label">Busca</label>
+            <input id="searchInput" class="form-control" placeholder="Digite sua busca aqui">
+        </div>
+
+        <table class="table mt-4">
+            <caption>Tabela de produtos cadastrados</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="productList">
+            </tbody>
+        </table>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
